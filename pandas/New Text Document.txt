@@ -1,0 +1,9 @@
+(base) C:\Users\LJENG>D:
+
+(base) D:\>mkdir Samil_#0
+
+(base) D:\>mkdir Samil_30
+
+(base) D:\>cd Samil_30
+
+(base) D:\Samil_30>jupyter notebook
