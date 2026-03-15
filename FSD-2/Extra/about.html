@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(43, 32, 62); color: aliceblue;">
+    <div style=" background-color: #300cff; padding: 10px;"> Home <p style="display: inline; color: rgb(165, 244, 38);">About</p> Info Contact-Us</tt></div>
+    <h2>This Is About Page</h2>
+    <h3>Hello Server Started</h3>
+    <img src="" alt="" id="img">
+    <script>
+        let img=document.getElementById('img')
+        setTimeout(()=>{
+            console.log(img.getAttribute('src'));
+            
+            img.setAttribute('src','img.png')
+            console.log(img.getAttribute('src'));
+            
+        },3000)
+    </script>
+</body>
+</html>
