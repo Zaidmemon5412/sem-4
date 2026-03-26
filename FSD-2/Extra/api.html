@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: #050431;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2{
+            font-weight: bolder;
+            color: rgb(148, 202, 250);
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label{
+             color: rgb(148, 202, 250);
+             font-size: 35px;
+             display: block;
+             padding:5px 20px ;
+
+        }
+        input{
+            background-color: #f079c0;
+            height:30px;
+            border-radius: 8px;
+            margin: 5px 35px;
+        }
+        button{
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            display: block;
+             color: rgb(28, 35, 120);
+             background-color: #3a58a3;
+            height:30px;
+            width: 200px;
+            border-radius: 8px;
+            margin: 5px 35px;
+            font-weight: 800;
+        }
+        button:hover{
+            background-color: #b5a6fc;
+        }
+    </style>
+</head>
+<body>
+    <h2>Get Api</h2>
+    <form action="/api" method="get">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
