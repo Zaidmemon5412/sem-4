@@ -4,5 +4,5 @@ let q = new URL(addr)
 // console.log(q)
 
 let data = q.query
-console.log(data)
-console.log(data.year)
+console.log(q)
+// console.log(data.year)

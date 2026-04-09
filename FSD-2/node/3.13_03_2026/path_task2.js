@@ -1,7 +1,7 @@
 pm = require('path')
 fs = require('fs')
-var path = pm.dirname('D:/FSD-mern/path.txt')
-var fname = pm.basename('D:/FSD-mern/path.txt')
+var path = pm.dirname('./FSD-mern/path.txt')
+var fname = pm.basename('./FSD-mern/path.txt')
 var newpath = path + fname
 console.log('Dir name : ', path);
 console.log('File Name : ', fname);
@@ -13,7 +13,7 @@ fs.mkdir(path, (err) => {
     fs.writeFile(newpath, 'Data Write...', (err) => {
         if (err) throw err
         console.log('Write Successfully');
-        fs.copyFile(newpath, path + 'copy.txt', (err) => {
+        fs.copyFile(newpath, path + '/copy.txt', (err) => {
             if (err) throw err
             console.log('copy Successfully');
             fs.unlink(newpath, (err) => {

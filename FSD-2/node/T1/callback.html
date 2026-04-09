@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(38, 78, 78);">
+    <p style="font-size: 50px; color: blue;" id="text">HELLO</p>
+    <button id="start">Start</button>
+    <button id="end">End</button>
+    <button id="back">back</button>
+    <script>
+        const p=document.getElementById('text')
+        const start=document.getElementById('start')
+        const end=document.getElementById('end')
+        const back=document.getElementById('back')
+        let size=50
+        let interval=null
+        start.addEventListener('click',function (){
+            clearInterval(interval)
+           interval= setInterval(function(){
+            if(size>=200){
+                clearInterval(interval)
+            }
+            else{
+                size+=2
+                p.style.fontSize=size+"px"
+            }
+           },300)
+        })
+        end.addEventListener('click',function () {
+            clearInterval(interval) 
+        })
+        back.addEventListener('click',function(){
+            clearInterval(interval)
+            interval=setInterval(function(){
+                if(size<=50){
+                    clearInterval(interval)
+                }else{
+                    size-=2
+                    p.style.fontSize=size+"px"
+                }
+            },300)
+        })
+    </script>
+    
+</body>
+</html>
