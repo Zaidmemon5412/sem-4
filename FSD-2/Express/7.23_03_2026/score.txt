@@ -1,6 +1,0 @@
-[{"name":"Rohit","runs":52},{"name":"Kohli","runs":96},{"name":"Gill","runs":20},{"name":"Rahul","runs":33},{"name":"Tilak","runs":30},{"name":"Hardik","runs":52}]
-TotalRuns:283
-Runrate:14.15
--Rohit
--Kohli
--Hardik
