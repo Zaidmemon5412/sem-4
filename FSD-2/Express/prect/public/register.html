@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Student Registration</title>
+  </head>
+  <body>
+    <h2>Register Student</h2>
+
+    <form id="regForm">
+      <label>Name:</label>
+      <input name="name" type="text" required />
+      <br /><br />
+
+      <label>Email:</label>
+      <input name="email" type="email" required />
+      <br /><br />
+
+      <label>Age:</label>
+      <input name="age" type="number" required />
+      <br /><br />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <h3>Server Response:</h3>
+    <pre id="output"></pre>
+
+    <script>
+      const form = document.getElementById("regForm");
+      const output = document.getElementById("output");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        const res = await fetch("/students", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        });
+
+        const result = await res.json();
+        output.textContent = JSON.stringify(result, null, 2);
+      });
+    </script>
+  </body>
+</html>

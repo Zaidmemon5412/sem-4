@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #032344;
+            color:rgb(66, 217, 217);
+        }
+        form{
+            background-color: #0f5b87;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            height: auto;
+             box-shadow: 0 4px 8px rgba(139, 213, 300, 0.2);
+        }
+        .input{
+            color: #043e79;
+            background-color: #51b7b0;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .loginButton{
+            margin: 5px;
+            color:  #51b7b0;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: #222253;
+            box-shadow: 0 4px 8px rgba(139, 213, 300, 0.2);
+
+          
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Login Page</h2>
+    <form action="/home" method="get">
+        <fieldset>
+            <center> <legend>Login</legend></center>
+         <div>
+              <label for="uname">User name:</label>
+           <input type="text" name="uname" id="uname" class="input">
+         </div>
+            <div>
+                <label for="password"> Password:</label>
+           <input type="password" name="password" id="password" class="input">
+            </div>
+          <center> <button class="loginButton">Login</button></center>
+           
+        </fieldset>
+    </form>
+   
+    
+</body>
+</html>

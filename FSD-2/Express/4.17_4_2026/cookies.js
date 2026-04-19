@@ -1,0 +1,11 @@
+expr = require('express')
+app = expr()
+cp = require('cookie-parser')
+app.use(cp())
+app.get('/data', (req, res) => {
+    res.cookie('name', 'express')
+    res.cookie('age', 28)
+    res.cookie('email','exp@gmail.com',{maxAge:2000})
+    res.send(req.cookies.name)
+})
+app.listen(1003)
