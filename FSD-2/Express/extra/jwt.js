@@ -1,3 +1,11 @@
+// authentication mean to verify the identity of a user or system  like login and password
+
+// authorization mean to determine what resources a user or system is allowed to 
+// access after authentication like role based access control 
+
+// authentication is a process of verifying identity 
+// authorization is a process of granting permissions to access resources
+
 expr = require('express')
 app = expr()
 jwt = require('jsonwebtoken')
