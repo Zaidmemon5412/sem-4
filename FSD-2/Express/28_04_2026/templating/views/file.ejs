@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <% let A="<b>ABC</b>" %>
+     <p><%= A %></p> #without html
+     <p><%- A %></p> # with html
+    <p><%% This is ejs %></p> # with ejs
+    <% let marks = 18 %>
+    <% if(marks >= 40 ) {%>
+    <p>pass</p>
+    <% } %>
+    <% else { %>
+        <p>fail</p>
+    <%}%>
+    
+</body>
+</html>

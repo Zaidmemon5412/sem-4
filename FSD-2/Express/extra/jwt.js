@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 app.post('/login-data',(req,res)=>{
     const {email,password} = req.body;
     let token = jwt.sign({email},SECRET_KEY)
-    res.cookie('token',token,{httpOnly:true,maxAge:1000*20})
+    res.cookie('token',token,{httpOnly:true})
     res.redirect('/home')
 })
 app.get('/home',(req,res)=>{
