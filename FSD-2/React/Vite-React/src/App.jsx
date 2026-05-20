@@ -1,11 +1,13 @@
 import Home from './home/Home.jsx'
 import './App.css'
+import Product from './home/Product.jsx'
 function App() {
 
   return (
     <>
-    <h2>Hello World</h2>
-    <Home/>
+   
+    {/* <Home/> */}
+    <Product />
     </>
   )
 }
