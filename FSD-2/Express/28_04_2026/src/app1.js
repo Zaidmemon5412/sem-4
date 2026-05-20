@@ -15,7 +15,7 @@ app.post("/login", (req, res) => {
   });
   var mailoption = {
     from: 'Your Email',
-    to:req.body.uname,
+    to:req.body.email,
     subject:'This is Deomo only',
     html:'<h2>Hello I am Faizan Memon,This is your file</h2>'
   }

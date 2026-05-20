@@ -1,12 +1,13 @@
 expr = require('express')
 app = expr()
+path = require('path')
 app.use(expr.urlencoded({ extended: true }))
 app.use(expr.static('../public', { index: 'a.html' }))
 app.get("/login", (req, res,next) => {
     console.log(req.url)
     res.set("content-type", "text/html");
-    res.write(`<center><h1>Welcome ${req.url.name}</h1>`)
-    res.write(`<center><h2>Your email id is  ${req.url.email}</h2>`)
+    res.write(`<center><h1>Welcome ${req.query.name}</h1>`)
+    res.write(`<center><h2>Your email id is  ${req.query.email}</h2>`)
     res.write(`<center><h4>You can subscribe to get daily updates</h4>`)
     next()
 })
