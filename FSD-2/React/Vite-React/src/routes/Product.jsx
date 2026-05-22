@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "./Navbar";
+import Filter from "../shared/component/Filter";
 
 function Product() {
   const [Products, setProducts] = useState([]);
@@ -17,8 +17,8 @@ function Product() {
       : Products.filter((p) => p.category == category);
   return (
     <>
-      <Navbar setCategory={setCategory} />
-      <h1>Products</h1>
+      <Filter setCategory={setCategory} />
+      
       <div className="Filters"></div>
       <div className="products-container">
         {filteredProducts.map((p) => (

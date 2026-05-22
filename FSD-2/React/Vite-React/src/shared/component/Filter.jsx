@@ -3,9 +3,9 @@
 function Navbar({ setCategory }) {
   return (
     <>
-      <nav className="navbar">
-        <h1>My Store</h1>
-        <div className="nav-links">
+      <div className="Filter">
+        
+        <div className="Filter-links">
           <button onClick={() => setCategory("all")}>All</button>
 
           <button onClick={() => setCategory("electronics")}>
@@ -20,7 +20,7 @@ function Navbar({ setCategory }) {
             Women's
           </button>
         </div>
-      </nav>
+      </div>
     </>
   );
 }

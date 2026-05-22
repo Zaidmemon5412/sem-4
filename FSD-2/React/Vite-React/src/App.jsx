@@ -1,13 +1,14 @@
-import Home from './home/Home.jsx'
+
 import './App.css'
-import Product from './home/Product.jsx'
+
+import Main from './routes/Main.jsx'
+
 function App() {
 
   return (
     <>
+    <Main />
    
-    {/* <Home/> */}
-    <Product />
     </>
   )
 }
