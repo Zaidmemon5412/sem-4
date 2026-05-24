@@ -94,7 +94,7 @@
 }
 
 .navbar h1:hover{
-    color: #38bdf8;
+    color: #5cbee8;
     transform: scale(1.05);
 }
 
@@ -123,7 +123,7 @@
 
 .nav-links ul li a:hover{
     background-color: #38bdf8;
-    color: black;
+    color: rgb(16, 2, 48);
 
     transform: translateY(-2px);
 
@@ -245,20 +245,13 @@
 }
 
 .dropdown-content{
+   
+    background-color: #09212f;
+    box-shadow: 0 8px 16px 0 #0003;
+    display: none;
+    min-width: 160px;
     position: absolute;
-
-    top: 35px;
-    left: 0;
-
-    background: rgb(62, 2, 2);
-
-    min-width: 180px;
-
-    display:none;
-
-    padding: 10px;
-
-    border-radius: 10px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content{
