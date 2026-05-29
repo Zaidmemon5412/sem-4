@@ -24,6 +24,9 @@ function Navbar() {
             <li>
               <Link to="/Product">Product</Link>
             </li>
+            <li>
+              <Link to="/hooks">Hooks</Link>
+            </li>
             <li className="dropdown">
               <Link to="#">Tasks</Link>
 
