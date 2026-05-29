@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Filter from "../shared/component/Filter";
+import Filter from "../../shared/component/Filter";
 
 function Product() {
   const [Products, setProducts] = useState([]);

@@ -1,7 +1,7 @@
 
 import './App.css'
 
-import Main from './routes/Main.jsx'
+import Main from './routes/AppRoutes.jsx'
 
 function App() {
 
