@@ -8,9 +8,11 @@ import Clock from "../shared/component/Clock";
 import Task1 from "./Tasks/Task1";
 import UD1 from "./Tasks/UD1";
 import Hooks from "./Pages/Hooks";
-import Us2 from "./Hooks/Us2";
-import Us1 from "./Hooks/Us1";
-import Us3 from "./Hooks/Us3";
+import Us2 from "./Hooks/useState/Us2";
+import Us1 from "./Hooks/useState/Us1";
+import Us3 from "./Hooks/useState/Us3";
+import Ur2 from "./Hooks/useReducer/Ur2";
+import Uc1 from "./Hooks/useContext/dark&Light/Uc1";
 
 function Main() {
   return (
@@ -29,6 +31,8 @@ function Main() {
           <Route path="/hooks/us1" element={<Us1 />} />
           <Route path="/hooks/Us2" element={<Us2 />} />
           <Route path="/hooks/Us3" element={<Us3 />} />
+          <Route path="/hooks/Ur2" element={<Ur2 />} />
+          <Route path="/hooks/Uc1" element={<Uc1 />} />
         </Routes>
       </Router>
     </>

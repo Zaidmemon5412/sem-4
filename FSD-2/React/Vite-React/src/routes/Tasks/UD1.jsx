@@ -2,7 +2,9 @@ import {useLocation} from 'react-router-dom';
 
 function UD1() {
     const location = useLocation()
-    const name=location.state.name
+    var name=location.state.name
+    console.log(name.split("@"))
+    name=name.split("@")[0]
 
     return (
         <div>

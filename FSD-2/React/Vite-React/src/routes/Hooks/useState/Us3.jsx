@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import './UsStyle.css'
+import '../UsStyle.css'
 
 function Us3() {
     const [text,setText] = useState('L.J University')

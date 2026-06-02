@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import './UsStyle.css'
+import '../UsStyle.css'
 
 function Us2() {
   const [show, setShow] = useState(false);
