@@ -1,0 +1,57 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+
+<h1>Cricket Players</h1>
+
+<form method="GET">
+
+    ID:
+    <input type="text" name="pid" value="{{ request.GET.pid }}">
+
+    Name:
+    <input type="text" name="pname" value="{{ request.GET.pname }}">
+
+    Team:
+    <input type="text" name="team" value="{{ request.GET.team }}">
+
+    Runs:
+    <input type="text" name="runs" value="{{ request.GET.runs }}">
+
+    Birth Date:
+    <input type="text" name="bdate" value="{{ request.GET.bdate }}">
+
+    <button type="submit">Search</button>
+
+</form>
+
+<br>
+
+<table border="1" cellpadding="5">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Team</th>
+        <th>Runs</th>
+        <th>Birth Date</th>
+    </tr>
+
+    {% for player in players %}
+    <tr>
+        <td>
+            <a href="{% url 'info' player.id %}">
+                {{ player.id }}
+            </a>
+        </td>
+
+        <td>{{ player.player_name }}</td>
+        <td>{{ player.team_name }}</td>
+        <td>{{ player.runs }}</td>
+        <td>{{ player.birth_date }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

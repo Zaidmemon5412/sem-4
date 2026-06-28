@@ -1,0 +1,32 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+
+<h1>Player Details</h1>
+
+<p><strong>ID:</strong> {{ player.id }}</p>
+
+<p><strong>Name:</strong> {{ player.player_name }}</p>
+
+<p><strong>Team:</strong> {{ player.team_name }}</p>
+
+<p><strong>Description:</strong> {{ player.description }}</p>
+
+<p>
+    <strong>Profile URL:</strong>
+    <a href="{{ player.profile_url }}" target="_blank">
+        {{ player.profile_url }}
+    </a>
+</p>
+
+<p><strong>Runs:</strong> {{ player.runs }}</p>
+
+<p><strong>Birth Date:</strong> {{ player.birth_date }}</p>
+
+<p><strong>Created At:</strong> {{ player.created_at }}</p>
+
+<br>
+
+<a href="{% url 'home' %}">Back</a>
+
+{% endblock %}
