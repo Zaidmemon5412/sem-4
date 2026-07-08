@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 function Hooks() {
   return (
     <div className="hooks-container">
-      <h1 className="hooks-title px-4 py-2 font-bold text-xl">React Hooks Tasks</h1>
+      <h1 className="hooks-title px-4 py-2 font-bold text-xl">
+        React Hooks Tasks
+      </h1>
 
       <ul className="task-list">
         <center>
-        <h2 className="task-category font-bold text-lg">UseState Tasks</h2>
+          <h2 className="task-category font-bold text-lg">UseState Tasks</h2>
         </center>
         <li className="task-item">
           <Link to="/hooks/Us1" className="task-link">
@@ -42,6 +44,22 @@ function Hooks() {
             text "React Js Hooks" will not be shown.
           </Link>
         </li>
+        <li className="task-item">
+          <Link to="/hooks/Us4" className="task-link">
+            task hide and show
+          </Link>
+        </li>
+        <li className="task-item">
+          <Link to="/hooks/Us10" className="task-link">
+            Task-10 (US10) Create react app which contains form with following
+            fields. • Email(Input type email) • Password(Input type password) •
+            Confirm Password(Input type password) [For Ref.: Add validation
+            using regex to validate email id and password (Must contain at least
+            8 characters and must contain at least 1 uppercase, 1 lowercase and
+            1 digit).] Also values of password and confirm password must be
+            same. Display email in alert box. (Using useState Hook)
+          </Link>
+        </li>
       </ul>
       <br />
       <br />
@@ -58,9 +76,9 @@ function Hooks() {
         </li>
       </ul>
       <ul className="task-list">
-          <center>
-        <h2 className="font-bold text-lg">UseContext Tasks</h2>
-      </center>
+        <center>
+          <h2 className="font-bold text-lg">UseContext Tasks</h2>
+        </center>
         <li className="task-item">
           <Link to="/hooks/Uc1" className="task-link">
             Task-4 (ToggleUC) Create a React application that allows users to
@@ -70,6 +88,28 @@ function Hooks() {
             button, the theme should toggle, and the background and text colors
             should change accordingly. Display the current mode as "Light Mode"
             or "Dark Mode" in the center of the screen.
+          </Link>
+        </li>
+        <li className="task-item">
+          <Link to="/hooks/Uc2" className="task-link">
+            Task-2 Use multiple contexts in a React application by creating and
+            consuming them across different components. uc1.js: Creates a
+            context for CSS styling and provides it to Comp1. uc2.js: Creates a
+            context for a string value ("Students") and provides it to Comp2.
+            uc3.js: Consumes both contexts and displays a message with the
+            provided styles and string.
+          </Link>
+        </li>
+        <li className="task-item">
+          <Link to="/hooks/Uc3" className="task-link">
+            Task-3 Create react app which to perform following task using
+            function component: Create one main file name F1.js & other 2
+            component files F2.js & F3.js. Main file contains form with
+            following fields: o First Name (Input type text) o Last Name (Input
+            type text) o Message (Textarea) o City (Dropdown) o Gender (Radio
+            Button) Pass values of all fields from F1.js file to F3.js file. And
+            display all submitted values in alert box using useContext &
+            useState hook. No need to write App.js file
           </Link>
         </li>
       </ul>

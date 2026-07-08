@@ -13,6 +13,10 @@ import Us1 from "./Hooks/useState/Us1";
 import Us3 from "./Hooks/useState/Us3";
 import Ur2 from "./Hooks/useReducer/Ur2";
 import Uc1 from "./Hooks/useContext/dark&Light/Uc1";
+import Comp1 from "./Hooks/useContext/task2/Comp1";
+import F1 from "./Hooks/useContext/task3/F1";
+import Us4 from "./Hooks/useState/Us4";
+import Us10 from "./Hooks/useState/Us10";
 
 function Main() {
   return (
@@ -31,8 +35,12 @@ function Main() {
           <Route path="/hooks/us1" element={<Us1 />} />
           <Route path="/hooks/Us2" element={<Us2 />} />
           <Route path="/hooks/Us3" element={<Us3 />} />
+          <Route path="/hooks/Us4" element={<Us4 />} />
+          <Route path="/hooks/Us10" element={<Us10 />} />
           <Route path="/hooks/Ur2" element={<Ur2 />} />
           <Route path="/hooks/Uc1" element={<Uc1 />} />
+          <Route path="/hooks/Uc2" element={<Comp1 />} />
+          <Route path="/hooks/Uc3" element={<F1 />} />
         </Routes>
       </Router>
     </>
