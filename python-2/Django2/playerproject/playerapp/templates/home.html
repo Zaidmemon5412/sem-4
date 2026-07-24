@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h2>Home</h2>
+    <form method="GET">
+  <input type="text" name="name" placeholder="Search by name" value="{{query}}">
+  <button type="submit">Search</button>
+</form>
+ 
+{% if players %}
+<table>
+  <tr><th>Name</th><th>Test Innings</th><th>Runs</th><th>Actions</th></tr>
+  {% for player in players %}
+  <tr>
+    <td>{{ player.name }}</td>
+    <td>{{ player.test_innings }}</td>
+    <td>{{ player.runs }}</td>
+    <td>
+      <a href="{% url 'edit_player' player.id %}">Edit</a>
+     <a href="{% url 'delete_player' player.id %}">Delete</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+  <p>No result found</p>
+{% endif %}
+{% endblock %}
+    <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'welcome' %}">Welcome</a></li>
+      <li><a href="{% url 'add_player' %}">Add Player</a></li>
+    </ul>
+  </nav>
+    <h2>Home</h2>
+    <form method="GET">
+  <input type="text" name="name" placeholder="Search by name" value="{{query}}">
+  <button type="submit">Search</button>
+</form>
+ 
+{% if players %}
+<table>
+  <tr><th>Name</th><th>Test Innings</th><th>Runs</th><th>Actions</th></tr>
+  {% for player in players %}
+  <tr>
+    <td>{{ player.name }}</td>
+    <td>{{ player.test_innings }}</td>
+    <td>{{ player.runs }}</td>
+    <td>
+      <a href="{% url 'edit_player' player.id %}">Edit</a>
+     <a href="{% url 'delete_player' player.id %}">Delete</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
+  <p>No result found</p>
+{% endif %}
+
+
+
+
+</body>
+
+</html>

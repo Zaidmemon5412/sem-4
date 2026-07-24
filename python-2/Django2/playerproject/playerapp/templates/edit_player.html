@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" method='POST'>
+        {% csrf_token %}
+        Name: <input type="text" name="name" id="name" placeholder='Enter Name' value="{{player.name}}"> <br> <br>
+        test_innings: <input type="number" name="test_innings" id="" value="{{player.test_innings}}"><br> <br>
+        runs: <input type="number" name="runs" id="" value="{{player.runs}}"><br> <br>
+        <button type="submit">edit player</button>
+    </form>
+    
+</body>
+</html>
